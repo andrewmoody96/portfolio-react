@@ -10,6 +10,10 @@ h6 {
   color: white;
 }
 
+.homeButtons button a {
+  color: black;
+}
+
 body {
   background-color: #ccdbd3;
 }
@@ -193,10 +197,21 @@ section h2 {
 
 #moody-headshot {
   width: 350px;
-  
+
   max-width: 50vw;
   height: auto;
   margin: 10px 10px 10px 15px;
+}
+
+.homeButtons {
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px;
+  padding: 5px 5px;
+}
+
+.homeButtons button {
+  margin: 10px 10px;
 }
 
 /* Styles the Work section of the page. */
@@ -320,8 +335,8 @@ header a {
 }
 
 #headerPara {
-    font-family: "Overpass Mono", monospace;
-    font-size: 1.2em;
+  font-family: "Overpass Mono", monospace;
+  font-size: 1.2em;
 }
 
 section h2 {
@@ -344,6 +359,11 @@ section h2 {
   line-height: 1.5em;
 }
 
+.homeButtons button a {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.2em;
+}
+
 #work-article {
   text-align: center;
 }
@@ -357,6 +377,10 @@ section h2 {
   text-align: center;
 }
 
+footer p {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.2em;
+}
 /* OTHER STYLING */
 
 /* Creates a smooth scrolling effect using nav to jump to different page sections.  */
@@ -378,7 +402,7 @@ body {
   opacity: 0;
 }
 .console-container {
-  font-family: "Overpass Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
   font-size: 3em;
   text-align: right;
   height: 85px;
