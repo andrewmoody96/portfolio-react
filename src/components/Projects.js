@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import fullyBookedCapture from "../images/fullyBookedCapture.png"
 import MoreProjects from "./MoreProjects.js"
 // Here we destructure our props into their own distinct variables
 export default function Projects() {
@@ -9,9 +10,7 @@ export default function Projects() {
         <section id="work-id" className="work">
           
           <>
-            <MoreProjects />
-            <>
-              {" "}
+          {" "}
               <button
                 id="featuredApp-btn"
                 className="btn btn-sm btn-info mx-2"
@@ -19,6 +18,8 @@ export default function Projects() {
               >
                 Featured App
               </button>{" "}
+            <>
+              <MoreProjects />
             </>
           </>
         </section>
@@ -26,7 +27,6 @@ export default function Projects() {
     }
     return (
       <section id="work-id" className="work">
-        <h2 id="h2-work">Featured App</h2>
         <p className="project-instructions">
           Click on the image to view the application.
         </p>
@@ -41,15 +41,14 @@ export default function Projects() {
               target="_blank"
               rel="noreferrer"
             >
-              <h2>Fully Booked</h2>
+              <h3>Fully Booked</h3>
               <h6 className="app-description">
-                Allows users to view, create, and manage community libraries.
-                Login to check out books.
+                View, create, and manage community libraries.
               </h6>
               {/* <h4></h4> */}
               <img
                 id="featuredapp-pic"
-                src="./Assets/Images/FullyBooked-capture.png"
+                src={fullyBookedCapture}
                 alt="Featured web application."
               />
             </a>

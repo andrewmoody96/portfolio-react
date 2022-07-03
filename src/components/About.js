@@ -1,5 +1,5 @@
 import React from "react";
-
+import moodyMusic from "../images/moodyMusic.png"
 // Here we destructure our props into their own distinct variables
 export default function About({ loggedIn, setLoggedIn }) {
   // Lets log our our loggedIn variable to see it change in real time
@@ -10,16 +10,10 @@ export default function About({ loggedIn, setLoggedIn }) {
     <div>
       {/* Conditional (ternary) operator is checking to see if loggedIn is true. If so render the following: */}
       <section id="aboutme-id" className="aboutme">
-        <div id="animationContainer" className="console-container">
-          <span id="text"></span>
-          <div className="console-underscore" id="console">
-            &#95;
-          </div>
-        </div>
         <article id="aboutme-article">
           <img
-            id="moody-headshot"
-            src="./Assets/Images/Moody-Headshot.jpg"
+            id="moody-music"
+            src={moodyMusic}
             alt="Andrew Moody."
           />
           <p id="aboutmeText">

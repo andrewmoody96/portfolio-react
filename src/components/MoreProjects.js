@@ -1,4 +1,7 @@
 import React from "react";
+import fishAppCapture from "../images/fishAppCapture.png"
+import JATE from "../images/jatePWA.png"
+import passwordGenCapture from "../images/passwordGenCapture.png"
 
 // Here we destructure our props into their own distinct variables
 export default function MoreProjects({ loggedIn, setLoggedIn }) {
@@ -22,7 +25,7 @@ export default function MoreProjects({ loggedIn, setLoggedIn }) {
               </h6>
               <img
                 className="other-app-pic"
-                src="./Assets/Images/oneFishTwoFishRedFishGoFish.png"
+                src={fishAppCapture}
                 alt="Web application."
               />
             </a>
@@ -38,22 +41,22 @@ export default function MoreProjects({ loggedIn, setLoggedIn }) {
           </div>
           <div className="card">
             <a
-              href="https://andrewmoody96.github.io/moody-hw6-WeatherDashboard/"
+              href="https://jate-texteditingsoftware.herokuapp.com/"
               target="_blank"
               rel="noreferrer"
             >
-              <h3>Weather Dashboard</h3>
+              <h3>Just Another Text Editor</h3>
               <h6 className="app-description">
-                An app to show users weather data based on the city they input.
+                A PWA text editor that can be used online & offline. 
               </h6>
               <img
                 className="other-app-pic"
-                src="./Assets/Images/weather-pic.png"
+                src={JATE}
                 alt="Web application."
               />
             </a>
             <a
-              href="https://github.com/andrewmoody96/1-fish-2-fish-red-fish-joe-fish"
+              href="https://github.com/andrewmoody96/Text-Editor"
               title="GitHub"
               className=""
               target="_blank"
@@ -64,20 +67,20 @@ export default function MoreProjects({ loggedIn, setLoggedIn }) {
           </div>
           <div className="card">
             <a
-              href="https://andrewmoody96.github.io/chocolateinyourpocket/"
+              href="https://andrewmoody96.github.io/moody-hw3-JSPasswordGenerator/"
               target="_blank"
               rel="noreferrer"
             >
-              <h3>Chocolate In Your Pocket</h3>
-              <h6>Homepage for my band. A work in progress.</h6>
+              <h3>JS Password Generator</h3>
+              <h6>Generates a secure password.</h6>
               <img
                 className="other-app-pic"
-                src="./Assets/Images/CIYP Website Pic.png"
+                src={passwordGenCapture}
                 alt="Web application."
               />
             </a>
             <a
-              href="https://github.com/andrewmoody96/1-fish-2-fish-red-fish-joe-fish"
+              href="https://github.com/andrewmoody96/moody-hw3-JSPasswordGenerator"
               title="GitHub"
               className=""
               target="_blank"
