@@ -87,8 +87,6 @@ export default function MoreProjects({ loggedIn, setLoggedIn }) {
             </a>
           </div>
         </div>
-        {/* <button id="moreApps">Show Me More</button> */}
-      {/* <script src="public/Assets/JS/animateHeading.js"></script> */}
     </div>
   );
 }
