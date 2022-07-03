@@ -10,6 +10,11 @@ h6 {
   color: white;
 }
 
+.homeButtons button {
+    border: 2px solid #676767;
+    border-radius: 10%;
+    box-shadow: 0px 0px 2px 2px #ccdbd3;
+}
 .homeButtons button a {
   color: black;
 }
@@ -55,9 +60,9 @@ section {
 
 /* Provides circular border for the profile picture. */
 #moody-headshot {
-  border: 5px solid #ccdbd3;
+  border: 5px solid #676767;
   border-radius: 50%;
-  box-shadow: 0px 0px 5px 5px #f7f2dc;
+  box-shadow: 0px 0px 2px 2px #ccdbd3;
 }
 
 /* Provides a border for class .card */
