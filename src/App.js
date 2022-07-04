@@ -23,7 +23,7 @@ library.add(fas, far, faInstagram, faGithub, faLinkedin)
 function App() {
   
   return (
-    <HashRouter>
+    <HashRouter basename="/">
       <div className="flex-column justify-flex-start min-100-vh">
         <Header />
         <div className="container">
