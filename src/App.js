@@ -23,7 +23,7 @@ library.add(fas, far, faInstagram, faGithub, faLinkedin)
 function App() {
   
   return (
-    <Router>
+    <HashRouter>
       <div className="flex-column justify-flex-start min-100-vh">
         <Header />
         <div className="container">
@@ -36,7 +36,7 @@ function App() {
         </div>
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
