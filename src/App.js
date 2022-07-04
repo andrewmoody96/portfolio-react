@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { Router, Routes, Route } from "react-router-dom";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -23,7 +23,7 @@ library.add(fas, far, faInstagram, faGithub, faLinkedin)
 function App() {
   
   return (
-    <HashRouter basename="/">
+    <Router basename="/">
       <div className="flex-column justify-flex-start min-100-vh">
         <Header />
         <div className="container">
@@ -35,7 +35,7 @@ function App() {
         </div>
         <Footer />
       </div>
-    </HashRouter>
+    </Router>
   );
 }
 
