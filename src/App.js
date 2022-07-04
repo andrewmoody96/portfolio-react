@@ -31,8 +31,9 @@ function App() {
           <Routes>
             {/* Define routes to render different page components at different paths */}
             <Route path="" element={<Home />} />
-            <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="#footer" />
+            <Route path="/about" element={<About />} />
           </Routes>
         </div>
         <Footer />
