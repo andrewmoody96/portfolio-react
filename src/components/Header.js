@@ -1,7 +1,7 @@
 import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 // Here we destructure our props into their own distinct variables
-function Header() {
+export default function Header() {
   // Lets log our our loggedIn variable to see it change in real time
   // console.log('Welcome -> loggedIn', loggedIn);
 
@@ -15,11 +15,6 @@ function Header() {
             <h2>A.Moody</h2>
             <p id="headerPara">MERN & Music</p>
           </Link>
-          {/* <a href="">
-            <h1>A.Moody</h1>
-            <h2>A.Moody</h2>
-            <p id="headerPara">MERN & Music</p>
-          </a> */}
         </div>
         <nav>
           <button className="navButtons">
@@ -36,5 +31,3 @@ function Header() {
     </div>
   );
 }
-
-export default withRouter(Header);
