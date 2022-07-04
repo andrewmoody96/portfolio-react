@@ -29,7 +29,7 @@ function App() {
         <div className="container">
           <Routes>
             {/* Define routes to render different page components at different paths */}
-            <Route path="/portfolio-react" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/portfolio-react/about" element={<About />} />
             <Route path="/portfolio-react/projects" element={<Projects />} />
           </Routes>
