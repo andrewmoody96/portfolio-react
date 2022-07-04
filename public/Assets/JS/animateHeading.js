@@ -1,92 +1,3 @@
-// let workSection = document.getElementById("work-id");
-// let moreApps = (`<div id="other-app">
-// <div className="card">
-// <a
-// href="https://andrewmoody96.github.io/1-fish-2-fish-red-fish-joe-fish/"
-// target="_blank"
-// >
-// <h3>One Fish, Two Fish, Red Fish, Go Fish?</h3>
-// <h5>One Fish, Two Fish, Red Fish, Go Fish?</h5>
-// <h6 className="app-description">
-//   An application to help ocean fishers find information on species
-//   and weather for the location they'll be fishing at.
-// </h6>
-// <h4>
-//   <a
-//     href="https://github.com/andrewmoody96/1-fish-2-fish-red-fish-joe-fish"
-//     title="GitHub"
-//     className=""
-//     target="_blank"
-//     style="color: #d1e189"
-//     >Repo</a
-//   >
-// </h4>
-// <img
-//   className="other-app-pic"
-//   src="./Assets/Images/oneFishTwoFishRedFishGoFish.png"
-//   alt="Photo of web application."
-// />
-// </a>
-// </div>
-// <div className="card">
-//   <a
-//     href="https://andrewmoody96.github.io/moody-hw6-WeatherDashboard/"
-//     target="_blank"
-//   >
-//     <h3>Weather Dashboard</h3>
-//     <h5>Weather Dashboard</h5>
-//     <h6>An app to show users weather data based on the city they input.</h6>
-//     <h4>
-//               <a
-//                 href="https://github.com/andrewmoody96/1-fish-2-fish-red-fish-joe-fish"
-//                 title="GitHub"
-//                 className=""
-//                 target="_blank"
-//                 style="color: #d1e189;"
-//               >Repo</a>
-//             </h4>
-//     <img
-//       className="other-app-pic"
-//       src="./Assets/Images/weather-pic.png"
-//       alt="Photo of web application."
-//     />
-//   </a>
-// </div>
-// <div className="card">
-//   <a
-//     href="https://andrewmoody96.github.io/chocolateinyourpocket/"
-//     target="_blank"
-//   >
-//     <h3>Chocolate In Your Pocket</h3>
-//     <h5>Chocolate In Your Pocket</h5>
-//     <h6>Homepage for my band. A work in progress.</h6>
-//     <h4>
-//     <a
-//     href="https://github.com/andrewmoody96/1-fish-2-fish-red-fish-joe-fish"
-//     title="GitHub"
-//     className=""
-//     target="_blank"
-//     style="color: #d1e189;"
-//   >Repo</a>
-//   </h4>
-//     <img
-//       className="other-app-pic"
-//       src="./Assets/Images/CIYP Website Pic.png"
-//       alt="Photo of web application."
-//     />
-//   </a>
-// </div>
-// </div>`);
-// let showMoreBtn = document.getElementById("moreApps");
-
-// Creates and appends HTML to show more apps I've developed.
-// function displayMoreApps() {
-//   console.log("Clicked");
-//   document.getElementById("moreApps").style.display = "flex";
-//   // $(moreApps).appendTo(workSection);
-//   document.getElementById("moreApps").style.display = "none";
-// }
-
 // TEXT ANIMATION EFFECT
 
 /* Found online at https://www.sliderrevolution.com/resources/css-text-animation/ */
@@ -100,6 +11,7 @@ function consoleText(words, id, colors) {
   var waiting = false;
   var target = document.getElementById(id);
   target.setAttribute("style", "color:" + colors[0]);
+  con.setAttribute("style", "color:" + colors[0])
   window.setInterval(function () {
     if (letterCount === 0 && waiting === false) {
       waiting = true;
@@ -137,6 +49,4 @@ function consoleText(words, id, colors) {
     }
   }, 400);
 }
-consoleText(["Hello Everyone!", "My name is Andrew."], "text", ["white"]);
-
-// document.getElementById("moreApps").addEventListener("click", displayMoreApps);
+consoleText(["Hello!", "My name is Andrew."], "text", ["black"]);

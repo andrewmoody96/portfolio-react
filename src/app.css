@@ -7,28 +7,43 @@ h3,
 h4,
 h5,
 h6 {
-  color: white;
+  color: black;
 }
 
-.homeButtons button {
-  border: 2px solid #676767;
-  border-radius: 10%;
-  box-shadow: 0px 0px 2px 2px #ccdbd3;
+.buttons {
+  display: flex;
+  flex-direction: row;
 }
-.homeButtons button a {
+
+.homeButtons {
+  border: 2px solid #262626;
+  border-radius: 10%;
+  box-shadow: 0px 0px 2px 2px #676767;
+}
+.homeButtons a {
+  color: black;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.navButtons {
+  border: 2px solid #262626;
+  border-radius: 10%;
+  box-shadow: 0px 0px 2px 2px #676767;
+}
+.navButtons a {
   color: black;
 }
 
 body {
-  background-color: #ccdbd3;
-}
-
-a {
-  color: white;
+  background-color: rgba(204, 219, 211, 0.4);
 }
 
 P {
-  color: white;
+  color: black;
 }
 
 /* Colors for the page Header. */
@@ -38,8 +53,18 @@ header {
   border-bottom: 2.5px;
 }
 
+#header {
+  border: 1px solid #676767;
+  border-radius: 25px;
+}
+
 header h1 {
   color: black;
+}
+
+header h2 {
+  color: black;
+  display: none;
 }
 
 header a {
@@ -60,16 +85,28 @@ section {
 
 /* Provides circular border for the profile picture. */
 #moody-headshot {
-  border: 5px solid #676767;
+  border: 5px solid #262626;
   border-radius: 50%;
-  box-shadow: 0px 0px 2px 2px #ccdbd3;
+  box-shadow: 0px 0px 2px 2px #676767;
 }
 
 #moody-music {
-  border: 5px solid #676767;
+  border: 5px solid #262626;
   border-radius: 10%;
-  box-shadow: 0px 0px 2px 2px #ccdbd3;
-  width: 350px;
+  box-shadow: 0px 0px 2px 2px #676767;
+  width: 300px;
+  object-fit: cover;
+  max-width: 50vw;
+  height: auto;
+  margin: 10px 10px 10px 15px;
+}
+
+#moody-candid {
+  border: 5px solid #262626;
+  border-radius: 10%;
+  box-shadow: 0px 0px 2px 2px #676767;
+  width: 300px;
+  object-fit: cover;
   max-width: 50vw;
   height: auto;
   margin: 10px 10px 10px 15px;
@@ -78,8 +115,9 @@ section {
 /* Provides a border for class .card */
 .card {
   margin: 20px 10px;
-  border: 5px inset white;
-  box-shadow: 0px 0px 5px 3px #f7f2dc;
+  border: 2px inset #262626;
+  box-shadow: 0px 0px 5px 3px #676767;
+  background-color: #ccdbd3;
 }
 
 #featured-app {
@@ -91,76 +129,92 @@ section {
   border: 2.5px solid #676767;
 }
 
-#moreApps {
-  margin: 15px 0;
-  font-family: "Overpass", sans-serif;
-  font-size: 1.2em;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
+.repoButtons {
+  margin: 0 0 10px 0;
   background-color: #ccdbd3;
   cursor: pointer;
-  border: 3px solid;
+  border: 2px solid #262626;
   border-radius: 10%;
-  padding: 0.5em 0.5em;
+  box-shadow: 0px 0px 2px 2px #ccdbd3;
+  padding: 0.2em 0.5em;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
 
-#moreApps:hover {
+.repoButtons a {
+  font-family: "Overpass", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.repoLink {
+  text-decoration: none;
+  color: black;
+}
+
+.repoButtons:hover {
   box-shadow: 0px 0px 5px 3px #f7f2dc;
   top: 5px;
   left: 5px;
 }
 
-@media (min-width: 768px) {
-  #moreApps {
-    padding: 0.25em 0.75em;
-  }
-}
-
-#featuredApp-btn {
+.projectButtons {
   margin: 15px 0;
   font-family: "Overpass", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
+  color: black;
   background-color: #ccdbd3;
   cursor: pointer;
-  border: 3px solid;
+  border: 2px solid #262626;
   border-radius: 10%;
-  padding: 0.5em 0.5em;
+  box-shadow: 0px 0px 2px 2px #676767;
+  padding: 0.2em 0.5em;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
 
-#featuredApp-btn:hover {
+.projectButtons:hover {
   box-shadow: 0px 0px 5px 3px #f7f2dc;
   top: 5px;
   left: 5px;
 }
 
-@media (min-width: 768px) {
-  #featuredApp-btn {
-    padding: 0.25em 0.75em;
-  }
+.navButtons {
+  font-family: "Overpass", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #ccdbd3;
+  cursor: pointer;
+  border-radius: 10%;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.navButtons:hover {
+  box-shadow: 0px 0px 5px 3px #f7f2dc;
+  top: 5px;
+  left: 5px;
 }
 
 /* Colors for the page's Footer. */
-footer {
-  background-color: #ccdbd3;
-  border-top: 2.5px solid black;
-  colo: black;
+
+#contactOptions h4 a {
+  color: black;
 }
 
 footer p {
-  margin: 10px 0;
   color: black;
+  margin: 0;
+  text-align: center;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.2em;
 }
 
 #contactme-id a:hover {
@@ -209,7 +263,7 @@ header nav a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 /* SECTIONS */
@@ -235,13 +289,26 @@ section h2 {
 
 #aboutme-article {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#aboutmeText {
+.aboutmeText {
   display: flex;
+}
+
+.aboutTextContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutTextContainer p {
+  font-size: 2em;
+  padding: 15px;
+  text-align: center;
 }
 
 #work-article {
@@ -258,16 +325,29 @@ section h2 {
 
 .homeButtons {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   margin: 10px 10px;
   padding: 5px 5px;
 }
 
-.homeButtons button {
+.homeButtons:hover {
+  box-shadow: 0px 0px 5px 3px #f7f2dc;
+  top: 5px;
+  left: 5px;
+}
+
+.navButtons {
+  display: flex;
+  justify-content: center;
   margin: 10px 10px;
 }
 
-.homeButtons button:hover {
+.navButtons a {
+  margin: 5px 5px;
+}
+
+.navButtons:hover {
   box-shadow: 0px 0px 5px 3px #f7f2dc;
   top: 5px;
   left: 5px;
@@ -288,8 +368,8 @@ section#work-id {
 /* Class selectors for Work section. */
 .card {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: 10px 10px;
   text-align: center;
@@ -319,7 +399,7 @@ section#work-id {
 
 #featuredapp-pic {
   height: auto;
-  width: 1000px;
+  width: 350px;
   margin: 5px 10px;
   max-width: 65vw;
 }
@@ -337,13 +417,15 @@ section#work-id {
   width: 350px;
   max-width: 85vw;
   margin: 5px 10px;
+  box-shadow: 0px 0px 2px 2px #676767;
 }
 
 /* Styles the Contact Me section of the page. */
 .contactme {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
+  width: auto;
   padding: 10px 10px;
 }
 
@@ -353,6 +435,8 @@ section#work-id {
 
 #contactme-id {
   justify-content: center;
+  background-color: #ccdbd3;
+  box-shadow: 0px 0px 5px 3px #f7f2dc;
 }
 
 #contactOptions {
@@ -361,14 +445,10 @@ section#work-id {
 }
 
 /* Styles the footer of the page. */
-footer {
+#footer {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-}
-
-footer p {
-  margin: 0;
 }
 
 /* TYPOGRAPHY STYLING */
@@ -398,6 +478,7 @@ header a {
 #headerPara {
   font-family: "Overpass Mono", monospace;
   font-size: 1em;
+  text-align: center;
 }
 
 section h2 {
@@ -410,7 +491,7 @@ section h2 {
   font-size: 1.1em;
   font-weight: 600;
   line-height: 1.5em;
-  padding: 50px 0 25px 0;
+  padding: 25px 0 25px 0;
 }
 
 #aboutmeCTA {
@@ -425,6 +506,11 @@ section h2 {
   font-size: 1.2em;
 }
 
+.navButtons button a {
+  font-family: "Overpass", sans-serif;
+  font-size: 1em;
+}
+
 #work-article {
   text-align: center;
 }
@@ -436,12 +522,10 @@ section h2 {
 
 .card a h6 {
   text-align: center;
+  color: black;
+  margin: 10px 10px;
 }
 
-footer p {
-  font-family: "Overpass", sans-serif;
-  font-size: 1.2em;
-}
 /* OTHER STYLING */
 
 /* Creates a smooth scrolling effect using nav to jump to different page sections.  */
@@ -452,6 +536,9 @@ html {
 
 #animationContainer {
   display: block;
+  /* border: 1px solid rgba(103, 103, 103, 0.3);
+  border-radius: 2%;
+  background-color: rgba(103, 103, 103, 0.3); */
 }
 
 /* Found online at https://www.sliderrevolution.com/resources/css-text-animation/ */
@@ -474,6 +561,7 @@ body {
 }
 .console-underscore {
   display: inline-block;
+  font-family: "Ubuntu Mono", monospace;
 }
 
 /* MEDIA QUERIES -- for responsive sizing */
@@ -492,18 +580,33 @@ body {
     justify-content: center;
   }
 
+  header h1 {
+    display: none;
+  }
+
+  header h2 {
+    color: black;
+    display: block;
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 2em;
+  }
+
   h1 {
     text-align: center;
     padding: 10px 0;
   }
 
   header a {
-    margin-top: 5px;
+    margin: 5px 0 5px 0;
+  }
+
+  nav {
+    padding: 0 0 10px 0;
   }
 
   /* Responsive parameters for About Me section of the page. */
   .console-container {
-    font-family: "Overpass Mono", monospace;
+    font-family: "Ubuntu Mono", monospace;
     font-size: 2em;
     text-align: right;
     height: 75px;
@@ -532,6 +635,19 @@ body {
     overflow-y: hidden;
   }
 
+  .aboutTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutTextContainer p {
+    font-size: 1.2em;
+    padding: 5px;
+    text-align: center;
+  }
+
   #moody-headshot {
     max-width: 75vw;
     height: auto;
@@ -541,20 +657,18 @@ body {
   #moody-music {
     max-width: 75vw;
     height: auto;
-    margin: 10px 10px 10px 15px;
+    margin: 10px 10px 0px 15px;
+  }
+
+  #moody-candid {
+    max-width: 75vw;
+    height: auto;
+    margin: 10px 10px 0px 15px;
   }
 
   /* Responsive parameters for Work section of the page. */
 
   /* Class selectors for Work section of the page. */
-  /* .card {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    max-width: 85vw;
-    justify-content: center;
-  } */
 
   .card {
     display: flex;
@@ -576,6 +690,15 @@ body {
   .card a h5 {
     display: block;
     margin: 5px 5px;
+    color: black;
+  }
+
+  .other-app-pic {
+    height: auto;
+    width: 235px;
+    max-width: 50vw;
+    margin: 5px 10px;
+    box-shadow: 0px 0px 2px 2px #676767;
   }
 
   #featured-app {
@@ -608,10 +731,5 @@ body {
   #other-app {
     flex-direction: column;
     flex-wrap: wrap;
-  }
-
-  /* Responsive parameters for Contact Me section of the page. */
-  .contactme h4 {
-    font-size: smaller;
   }
 }

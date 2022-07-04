@@ -1,23 +1,30 @@
 import React, { useState } from "react";
-import fullyBookedCapture from "../images/fullyBookedCapture.png"
-import MoreProjects from "./MoreProjects.js"
+import fullyBookedCapture from "../images/fullyBookedCapture.png";
+import MoreProjects from "./MoreProjects.js";
+import background from "../images/background.jpg";
 // Here we destructure our props into their own distinct variables
 export default function Projects() {
   const [currentView, setView] = useState("featured");
   const renderView = () => {
     if (currentView !== "featured") {
       return (
-        <section id="work-id" className="work">
-          
+        <section
+          id="work-id"
+          className="work"
+          style={{
+            backgroundImage: `url(${background})`,
+            backgroundPosition: `center`,
+          }}
+        >
           <>
-          {" "}
-              <button
-                id="featuredApp-btn"
-                className="btn btn-sm btn-info mx-2"
-                onClick={() => setView("featured")}
-              >
-                Featured App
-              </button>{" "}
+            {" "}
+            <button
+              // id="featuredApp-btn"
+              className="projectButtons"
+              onClick={() => setView("featured")}
+            >
+              Featured App
+            </button>{" "}
             <>
               <MoreProjects />
             </>
@@ -26,13 +33,17 @@ export default function Projects() {
       );
     }
     return (
-      <section id="work-id" className="work">
+      <section
+        id="work-id"
+        className="work"
+        style={{
+          backgroundImage: `url(${background})`,
+          backgroundPosition: `center`,
+        }}
+      >
         <p className="project-instructions">
           Click on the image to view the application.
         </p>
-        {/* <p className="project-instructions">
-          To see additional apps, click "Show Me More".
-        </p> */}
         <div id="featured-app">
           {/* Card with embedded link to application. */}
           <div className="card">
@@ -42,10 +53,10 @@ export default function Projects() {
               rel="noreferrer"
             >
               <h3>Fully Booked</h3>
+              <h5>Fully Booked</h5>
               <h6 className="app-description">
                 View, create, and manage community libraries.
               </h6>
-              {/* <h4></h4> */}
               <img
                 id="featuredapp-pic"
                 src={fullyBookedCapture}
@@ -53,24 +64,26 @@ export default function Projects() {
               />
             </a>
             {/* Link to project Repo */}
-            <a
-              href="https://github.com/andrewmoody96/Fully-Booked"
-              title="GitHub"
-              className=""
-              target="_blank"
-              rel="noreferrer"
-            >
-              Repo
-            </a>
+            <button className="repoButtons">
+              <a
+                href="https://github.com/andrewmoody96/Fully-Booked"
+                title="GitHub"
+                className="repoLink"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Repo
+              </a>
+            </button>
           </div>
         </div>
         <button
-              id="moreApps"
-              className="btn btn-sm btn-info mx-2"
-              onClick={() => setView("moreApps")}
-            >
-              More Apps
-            </button>{" "}
+          // id="moreApps"
+          className="projectButtons"
+          onClick={() => setView("moreApps")}
+        >
+          More Apps
+        </button>{" "}
       </section>
     );
   };
@@ -87,5 +100,3 @@ export default function Projects() {
     </main>
   );
 }
-
-

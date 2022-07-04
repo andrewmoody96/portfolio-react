@@ -7,24 +7,31 @@ export default function Header({ loggedIn, setLoggedIn }) {
 
   // If we are loggedIn render one set of elements, and if not we render another
   return (
-    <div>
+    <div id="header">
       <header>
         <div id="headerText">
           <a href="/">
             <h1>A.Moody</h1>
-            <p id="headerPara">MERN, Music, and More</p>
+            <h2>A.Moody</h2>
+            <p id="headerPara">MERN & Music</p>
           </a>
         </div>
         <nav>
-          <a href="/projects" rel="noreferrer">
-            Projects
-          </a>
-          <a href="/contact" rel="noreferrer">
-            Contact
-          </a>
-          <a href="/about" rel="noreferrer">
-            About Me
-          </a>
+          <button className="navButtons">
+            <a href="/projects" rel="noreferrer">
+              Projects
+            </a>
+          </button>
+          <button className="navButtons">
+            <a href="#footer" rel="noreferrer">
+              Contact
+            </a>
+          </button>
+          <button className="navButtons">
+            <a href="/about" rel="noreferrer">
+              About Me
+            </a>
+          </button>
         </nav>
       </header>
     </div>

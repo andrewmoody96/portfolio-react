@@ -1,14 +1,12 @@
 import React from "react";
 import headshot from '../images/moodyHead.jpeg'
-// Here we destructure our props into their own distinct variables
-export default function Home({ loggedIn, setLoggedIn }) {
-  // Lets log our our loggedIn variable to see it change in real time
-  console.log("Welcome -> loggedIn", loggedIn);
+import background from '../images/background.jpg'
 
-  // If we are loggedIn render one set of elements, and if not we render another
+export default function Home() {
+
   return (
     <div>
-      <section>
+      <section style={{backgroundImage: `url(${background})`, backgroundPosition: `center`}}>
         <div id="animationContainer" className="console-container">
           <span id="text"></span>
           <div className="console-underscore" id="console">
@@ -20,13 +18,13 @@ export default function Home({ loggedIn, setLoggedIn }) {
           src={headshot}
           alt="Andrew Moody."
         />
-        <div className="homeButtons">
-          <button>
+        <div className="buttons">
+          <button className="homeButtons">
             <a href="/projects" rel="noreferrer">
               Projects
             </a>
           </button>
-          <button>
+          <button className="homeButtons">
             <a
               href="https://github.com/andrewmoody96"
               target="_blank"
