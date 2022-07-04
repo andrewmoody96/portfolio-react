@@ -16,13 +16,13 @@ My portfolio, built using React. Click [here](https://andrewmoody96.github.io/po
 ---
 ## Photos
 
-![Homepage](./assets/images/home.png)
+![Homepage](./Assets/images/home.png)
 
-![Projects](./assets/images/projects.png)
+![Projects](./Assets/images/projects.png)
 
-![More Projects](./assets/images/moreprojects.png)
+![More Projects](./Assets/images/moreprojects.png)
 
-![About Me](./assets/images/about.png)
+![About Me](./Assets/images/about.png)
 
 
 ---
