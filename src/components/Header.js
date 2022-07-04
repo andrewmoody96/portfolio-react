@@ -1,7 +1,7 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 // Here we destructure our props into their own distinct variables
-export default function Header({ loggedIn, setLoggedIn }) {
+export default function withRouter(Header) {
   // Lets log our our loggedIn variable to see it change in real time
   // console.log('Welcome -> loggedIn', loggedIn);
 
@@ -18,19 +18,21 @@ export default function Header({ loggedIn, setLoggedIn }) {
         </div>
         <nav>
           <button className="navButtons">
-            <a href="/projects" rel="noreferrer">
-              Projects
-            </a>
+            <Link to={"/projects"}>Projects</Link>
+            {/* <a href="/projects" rel="noreferrer">
+            </a> */}
           </button>
           <button className="navButtons">
-            <a href="#footer" rel="noreferrer">
+            <Link to={"#footer"}>Contact</Link>
+            {/* <a href="#footer" rel="noreferrer">
               Contact
-            </a>
+            </a> */}
           </button>
           <button className="navButtons">
-            <a href="/about" rel="noreferrer">
+            <Link to={"#footer"}>About Me</Link>
+            {/* <a href="/about" rel="noreferrer">
               About Me
-            </a>
+            </a> */}
           </button>
         </nav>
       </header>

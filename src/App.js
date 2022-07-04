@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route, withRouter } from "react-router-dom"
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -23,15 +24,15 @@ library.add(fas, far, faInstagram, faGithub, faLinkedin)
 function App() {
   
   return (
-    <Router>
+    <Router basename={`/${process.env.PUBLIC_URL}`}>
       <div className="flex-column justify-flex-start min-100-vh">
         <Header />
         <div className="container">
           <Routes>
             {/* Define routes to render different page components at different paths */}
-            <Route path="/" element={<Home />} />
-            <Route path="/portfolio-react/about" element={<About />} />
-            <Route path="/portfolio-react/projects" element={<Projects />} />
+            <Route path="" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
         </div>
         <Footer />
