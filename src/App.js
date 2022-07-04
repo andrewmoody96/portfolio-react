@@ -28,10 +28,9 @@ function App() {
         <Header />
         <div className="container">
           <Routes>
-            {/* Define routes to render different page components at different paths */}
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/portfolio-react/about" element={<About />} />
+            <Route path="/portfolio-react/projects" element={<Projects />} />
           </Routes>
         </div>
         <Footer />
