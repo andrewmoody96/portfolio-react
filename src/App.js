@@ -1,5 +1,5 @@
 import React from "react";
-import { Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -23,12 +23,13 @@ library.add(fas, far, faInstagram, faGithub, faLinkedin)
 function App() {
   
   return (
-    <Router basename="/">
+    <Router>
       <div className="flex-column justify-flex-start min-100-vh">
         <Header />
         <div className="container">
           <Routes>
-            <Route path="/" element={<Home />} />
+            {/* Define routes to render different page components at different paths */}
+            <Route path="/portfolio-react" element={<Home />} />
             <Route path="/portfolio-react/about" element={<About />} />
             <Route path="/portfolio-react/projects" element={<Projects />} />
           </Routes>
