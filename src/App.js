@@ -29,10 +29,10 @@ function App() {
         <Header />
         <div className="container">
           <Routes>
-            {/* Define routes to render different page components at different paths */}
             <Route path="" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="#footer" />
+            {/* doesn't nav to the ID. couldn't figure this one out */}
+            <Route path="#footer"/>
             <Route path="/about" element={<About />} />
           </Routes>
         </div>

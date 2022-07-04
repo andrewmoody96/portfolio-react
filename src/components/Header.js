@@ -21,7 +21,7 @@ export default function Header() {
             <Link to={"/projects"}>Projects</Link>
           </button>
           <button className="navButtons">
-            <Link to={"#footer"}>Contact</Link>
+            <Link to={`#footer`}>Contact</Link>
           </button>
           <button className="navButtons">
             <Link to={"/about"}>About Me</Link>
