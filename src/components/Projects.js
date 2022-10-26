@@ -3,6 +3,8 @@ import fullyBookedCapture from "../images/fullyBookedCapture.png";
 import MoreProjects from "./MoreProjects.js";
 import background from "../images/background.jpg";
 
+
+// PUSH TO GH-PAGES BRANCH
 export default function Projects() {
   const [currentView, setView] = useState("featured");
   const renderView = () => {

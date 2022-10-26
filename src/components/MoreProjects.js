@@ -4,7 +4,7 @@ import JATE from "../images/jatePWA.png"
 import passwordGenCapture from "../images/passwordGenCapture.png"
 import background from '../images/background.jpg'
 
-
+// PUSH TO GH-PAGES BRANCH
 export default function MoreProjects({ loggedIn, setLoggedIn }) {
   return (
     <div style={{backgroundImage: `url(${background})`, backgroundPosition: `center`}}>
