@@ -29,7 +29,7 @@ function App() {
         <Header />
         <div className="container">
           <Routes>
-            <Route path="" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             {/* doesn't nav to the ID. couldn't figure this one out */}
             <Route path="#footer"/>
