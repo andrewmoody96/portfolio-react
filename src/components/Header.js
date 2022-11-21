@@ -1,33 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// Here we destructure our props into their own distinct variables
-export default function Header() {
-  // Lets log our our loggedIn variable to see it change in real time
-  // console.log('Welcome -> loggedIn', loggedIn);
 
-  // If we are loggedIn render one set of elements, and if not we render another
+function Header() {
   return (
-    <div id="header">
-      <header>
-        <div id="headerText">
-          <Link to={""}>
-            <h1>A.Moody</h1>
-            <h2>A.Moody</h2>
-            <p id="headerPara">MERN & Music</p>
+    <header className="flex flex-col">
+      <h1 className="text-center">Andrew Moody</h1>
+      <nav className="flex flex-row justify-center">
+        <button className="m-2 rounded-md bg-red-300">
+          <Link className="p-2" to={"/"}>
+            Home
           </Link>
-        </div>
-        <nav>
-          <button className="navButtons">
-            <Link to={"/projects"}>Projects</Link>
-          </button>
-          <button className="navButtons">
-            <Link to={`#footer`}>Contact</Link>
-          </button>
-          <button className="navButtons">
-            <Link to={"/about"}>About Me</Link>
-          </button>
-        </nav>
-      </header>
-    </div>
+        </button>
+        <button className="m-2 rounded-md bg-red-300">
+          <Link className="p-2" to={"/projects"}>
+            Projects
+          </Link>
+        </button>
+        <button className="m-2 rounded-md bg-red-300">
+          <Link className="p-2" to={"/contact"}>
+            Contact
+          </Link>
+        </button>
+        <button className="m-2 rounded-md bg-red-300">
+          <Link className="p-2" to={"/about"}>
+            About Me
+          </Link>
+        </button>
+      </nav>
+    </header>
   );
 }
+
+export default Header;

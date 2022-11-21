@@ -1,5 +1,3 @@
-// TEXT ANIMATION EFFECT
-
 /* Found online at https://www.sliderrevolution.com/resources/css-text-animation/ */
 
 function consoleText(words, id, colors) {

@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import { Routes, Route, withRouter } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -16,8 +16,9 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
-import "./app.css";
+import "./output.css";
 library.add(fas, far, faInstagram, faGithub, faLinkedin)
 
 
@@ -25,14 +26,13 @@ function App() {
   
   return (
     <Router basename={`/${process.env.PUBLIC_URL}`}>
-      <div className="flex-column justify-flex-start min-100-vh">
+      <div className="">
         <Header />
-        <div className="container">
+        <div className="">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
-            {/* doesn't nav to the ID. couldn't figure this one out */}
-            <Route path="#footer"/>
+            <Route path="/contact" element={<Contact />}/>
             <Route path="/about" element={<About />} />
           </Routes>
         </div>
@@ -40,6 +40,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;
