@@ -5,12 +5,12 @@ module.exports = {
     extend: {
       screens: {
         'tablet': '855px',
-        'desktop': '950px',
+        'desktop': '944px',
         'wide': '1400px'
       },
       container: {
         center: true,
-      }
+      },
     },
   },
   plugins: [],

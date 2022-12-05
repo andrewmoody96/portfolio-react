@@ -3,11 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
   return (
-    <section>
-      <div>
-        <p className="text-center">Contact Me</p>
-      </div>
-      <div className="flex flew-row justify-center">
+    <footer className="mt-10 tablet:fixed relative bottom-0 left-0 right-0 mb-10 text-[#6C4B5E]">
+      <div className="flex flex-row justify-center text-lg">
         <h4 className="m-2">
           <a
             href="https://www.linkedin.com/in/andrew-moody-919a42165/"
@@ -16,7 +13,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+            <FontAwesomeIcon icon="fa-brands fa-linkedin" className="hover:text-red-600"/>
           </a>
         </h4>
         <h4 className="m-2">
@@ -27,7 +24,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon="fa-regular fa-envelope" />
+            <FontAwesomeIcon icon="fa-regular fa-envelope" className="hover:text-red-600"/>
           </a>
         </h4>
         <h4 className="m-2">
@@ -38,7 +35,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon="fa-brands fa-github" />
+            <FontAwesomeIcon icon="fa-brands fa-github" className="hover:text-red-600"/>
           </a>
         </h4>
         <h4 className="m-2">
@@ -49,7 +46,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon="fa-brands fa-instagram" />
+            <FontAwesomeIcon icon="fa-brands fa-instagram" className="hover:text-red-600"/>
           </a>
         </h4>
         <h4 className="m-2">
@@ -60,14 +57,14 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon="fa-regular fa-file-lines" />
+            <FontAwesomeIcon icon="fa-regular fa-file-lines" className="hover:text-red-600"/>
           </a>
         </h4>
       </div>
       <div>
-        <p className="text-center">&copy; 2022 Andrew Moody</p>
+        <p className="text-center text-xs font-josefin">&copy; 2022 Andrew Moody</p>
       </div>
-    </section>
+    </footer>
   );
 }
 
