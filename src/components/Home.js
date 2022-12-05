@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import headshot from "../images/moodyHead.jpeg";
-// import Music from "./Music";
+import Audio from "./Audio";
 import Dev from "./Dev";
 import About from "./About";
 import Contact from "./Contact";
@@ -85,7 +85,7 @@ export default function Home() {
           >
             go back
           </button>
-          {/* <Audio /> */}
+          <Audio />
         </div>
       );
     } else if (view === "development") {

@@ -73,7 +73,7 @@ export default function Contact() {
           <h4 className="m-3 text-6xl text-center text-[#6C4B5E]">
             <a
               href="https://forms.gle/NvuXLyZbPc2dCxcb7"
-              title="Link to Instagram"
+              title="Link to Engineering Inquiry Form"
               className="text-6xl text-center"
               target="_blank"
               rel="noreferrer"
