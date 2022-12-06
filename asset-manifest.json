@@ -1,28 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.795e0f0c.chunk.css",
-    "main.js": "/portfolio-react/static/js/main.982a449b.chunk.js",
-    "main.js.map": "/portfolio-react/static/js/main.982a449b.chunk.js.map",
-    "runtime-main.js": "/portfolio-react/static/js/runtime-main.8e0a3cef.js",
-    "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.8e0a3cef.js.map",
-    "static/js/2.4c099e12.chunk.js": "/portfolio-react/static/js/2.4c099e12.chunk.js",
-    "static/js/2.4c099e12.chunk.js.map": "/portfolio-react/static/js/2.4c099e12.chunk.js.map",
+    "main.css": "/portfolio-react/static/css/main.82703565.css",
+    "main.js": "/portfolio-react/static/js/main.84c058f7.js",
+    "static/media/divebuddyCapture.jpg": "/portfolio-react/static/media/divebuddyCapture.0e304ab3e08154e8d275.jpg",
+    "static/media/fishAppCapture.png": "/portfolio-react/static/media/fishAppCapture.ff2496fca9771e39dfae.png",
+    "static/media/CIYPcapture.jpg": "/portfolio-react/static/media/CIYPcapture.eebe32298db13595f7a2.jpg",
+    "static/media/moodyHead.jpeg": "/portfolio-react/static/media/moodyHead.4c3d054126aac6077489.jpeg",
+    "static/media/adonisReimagined.jpeg": "/portfolio-react/static/media/adonisReimagined.8245e1b3e51b88470604.jpeg",
+    "static/media/puffPuffPoseidon.jpeg": "/portfolio-react/static/media/puffPuffPoseidon.75377d2dd4290fa381ae.jpeg",
+    "static/media/guestBedroom.jpeg": "/portfolio-react/static/media/guestBedroom.481af2a1997c7e78c654.jpeg",
+    "static/media/bagatelles.jpeg": "/portfolio-react/static/media/bagatelles.61484b05fa95cd11cd25.jpeg",
+    "static/media/dieTrying.jpeg": "/portfolio-react/static/media/dieTrying.24cfc02f380500f07aa1.jpeg",
+    "static/media/qulture.jpeg": "/portfolio-react/static/media/qulture.eb1cebfcdca64d7e9537.jpeg",
+    "static/media/spotifylogo.png": "/portfolio-react/static/media/spotifylogo.cd66b8f63f6566194c7e.png",
+    "static/media/applemusiclogo.svg": "/portfolio-react/static/media/applemusiclogo.a7f982347fc3f7cfe747f9b311d9df66.svg",
     "index.html": "/portfolio-react/index.html",
-    "static/css/main.795e0f0c.chunk.css.map": "/portfolio-react/static/css/main.795e0f0c.chunk.css.map",
-    "static/js/2.4c099e12.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.4c099e12.chunk.js.LICENSE.txt",
-    "static/media/background.ce6fa3d6.jpg": "/portfolio-react/static/media/background.ce6fa3d6.jpg",
-    "static/media/fishAppCapture.7b666000.png": "/portfolio-react/static/media/fishAppCapture.7b666000.png",
-    "static/media/fullyBookedCapture.133d1acf.png": "/portfolio-react/static/media/fullyBookedCapture.133d1acf.png",
-    "static/media/jatePWA.67e03c67.png": "/portfolio-react/static/media/jatePWA.67e03c67.png",
-    "static/media/moodyCandid.ed5e7883.jpeg": "/portfolio-react/static/media/moodyCandid.ed5e7883.jpeg",
-    "static/media/moodyHead.4c3d0541.jpeg": "/portfolio-react/static/media/moodyHead.4c3d0541.jpeg",
-    "static/media/moodyMusic.dde19566.png": "/portfolio-react/static/media/moodyMusic.dde19566.png",
-    "static/media/passwordGenCapture.e5be94c1.png": "/portfolio-react/static/media/passwordGenCapture.e5be94c1.png"
+    "main.82703565.css.map": "/portfolio-react/static/css/main.82703565.css.map",
+    "main.84c058f7.js.map": "/portfolio-react/static/js/main.84c058f7.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.8e0a3cef.js",
-    "static/js/2.4c099e12.chunk.js",
-    "static/css/main.795e0f0c.chunk.css",
-    "static/js/main.982a449b.chunk.js"
+    "static/css/main.82703565.css",
+    "static/js/main.84c058f7.js"
   ]
 }
