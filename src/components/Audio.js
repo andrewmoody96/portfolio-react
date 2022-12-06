@@ -1,5 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import spotify from "../images/spotifyicon.eps";
+import apple from "../images/applemusicicon.eps"
 
 export default function Audio({ loggedIn, setLoggedIn }) {
   return (
@@ -60,6 +62,10 @@ export default function Audio({ loggedIn, setLoggedIn }) {
           </section>
           <section className="flex flex-col justify-center mt-5">
             Album 6
+            <div>
+              <img src={spotify} alt="Listen on Spotify"></img>
+              <img src={apple} alt="Listen on Apple Music"></img>
+            </div>
           </section>
         </div>
         <article id="inquiryLinks" className="mt-5 grid grid-cols-1 tablet:grid-cols-2 justify-items-center font-josefin">
