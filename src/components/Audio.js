@@ -1,9 +1,17 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import spotify from "../images/spotifyicon.eps";
-import apple from "../images/applemusicicon.eps"
+import spotify from "../images/spotifylogo.png";
+import apple from "../images/applemusiclogo.svg";
 
-export default function Audio({ loggedIn, setLoggedIn }) {
+// album photos
+import adonisCover from "../images/adonisReimagined.jpeg";
+import guestBedroom from "../images/guestBedroom.jpeg";
+import ppp from "../images/puffPuffPoseidon.jpeg";
+import bagatelles from "../images/bagatelles.jpeg";
+import qulture from "../images/qulture.jpeg";
+import dieTrying from "../images/dieTrying.jpeg";
+
+export default function Audio() {
   return (
     <>
       <div className="h-[8vh] w-auto">{/* Dummy Div for Spacing */}</div>
@@ -24,8 +32,7 @@ export default function Audio({ loggedIn, setLoggedIn }) {
           >
             zZounds.com
           </a>
-          . zZounds has been good to me and we offer a great selection of
-          equipment for whatever musical task you're taking on. <br></br>
+          .<br></br>
           <br></br>When I'm not selling gear, I play in{" "}
           <a
             href="https://www.chocolateinyourpocket.com/"
@@ -42,38 +49,210 @@ export default function Audio({ loggedIn, setLoggedIn }) {
         </article>
         <div
           id="albumLinks"
-          className="grid grid-cols-1 tablet:grid-cols-2 justify-items-center font-josefin"
+          className="grid grid-cols-1 tablet:grid-cols-2 justify-items-center font-josefin text-lg"
         >
-          <section className="flex flex-col justify-center mt-5">
-            Album 1
+          <section className="flex flex-col justify-center mt-5 mx-2 mb-2 border-b-2 border-[#6C4B5E] tablet:border-0">
+            <h3 className="text-center">Tommy Bravos</h3>
+            <img
+              src={adonisCover}
+              alt="Romeo (Moistbreezy Remix) by Tommy Bravos"
+              className="rounded-lg"
+            ></img>
+            <div className="flex flex-row justify-evenly my-5">
+              <a
+                href="https://open.spotify.com/track/45bAzbMA5bbwz1v8D4cHqt?si=2eb32d461ef94f2b"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={spotify}
+                  alt="Listen on Spotify"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
+              <a
+                href="https://music.apple.com/us/album/romeo-moistbreezy-remix/1628818726?i=1628818729"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={apple}
+                  alt="Listen on Apple Music"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
+            </div>
           </section>
-          <section className="flex flex-col justify-center mt-5">
-            Album 2
+          <section className="flex flex-col justify-center mt-5 mx-2 border-b-2 border-[#6C4B5E] tablet:border-0">
+            <h3 className="text-center">Alex Erickson</h3>
+            <img
+              src={guestBedroom}
+              alt="1912 by Alex Erickson"
+              className="rounded-lg"
+            ></img>
+            <div className="flex flex-row justify-evenly my-5">
+              <a
+                href="https://open.spotify.com/track/44cpvzVHyk05c2AaECEHN1?si=5bfb7c87eb8149c2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={spotify}
+                  alt="Listen on Spotify"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
+              <a
+                href="https://music.apple.com/us/album/1912/1618948000?i=1618948004"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={apple}
+                  alt="Listen on Apple Music"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
+            </div>
           </section>
-          <section className="flex flex-col justify-center mt-5">
-            Album 3
+          <section className="flex flex-col justify-center mt-5 mx-2 border-b-2 border-[#6C4B5E] tablet:border-0">
+            <h3 className="text-center">Puff Puff Poseidon</h3>
+            <img
+              src={ppp}
+              alt="Percussion Sexuals by Puff Puff Poseidon"
+              className="rounded-lg"
+            ></img>
+            <div className="flex flex-row justify-evenly my-5">
+              <a
+                href="https://open.spotify.com/track/4btWNC0dYYsqEC2WL53hFC?si=78f3a4ef32a243cb"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={spotify}
+                  alt="Listen on Spotify"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
+              <a
+                href="https://music.apple.com/us/album/percussion-sexuals/1612520747?i=1612520756"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={apple}
+                  alt="Listen on Apple Music"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
+            </div>
           </section>
-          <section className="flex flex-col justify-center mt-5">
-            Album 4
+          <section className="flex flex-col justify-center mt-5 mx-2 border-b-2 border-[#6C4B5E] tablet:border-0">
+            <h3 className="text-center">Silvan Negrutiu</h3>
+            <img
+              src={bagatelles}
+              alt="6 Bagatelles, Op. 126: No. 3, Andante, cantabile e grazioso performed by Silvan Negrutiu"
+              className="rounded-lg"
+            ></img>
+            <div className="flex flex-row justify-evenly my-5">
+              <a
+                href="https://open.spotify.com/track/1AqpdLotfB2KmXUiK7RPiy?si=3048a58ce06f4649"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={spotify}
+                  alt="Listen on Spotify"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
+              <a
+                href="https://music.apple.com/us/album/6-bagatelles-op-126-no-3-andante-cantabile-e-grazioso/1582473154?i=1582473486"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={apple}
+                  alt="Listen on Apple Music"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
+            </div>
           </section>
-          <section className="flex flex-col justify-center mt-5">
-            Album 5
-            
+          <section className="flex flex-col justify-center mt-5 mx-2 border-b-2 border-[#6C4B5E] tablet:border-0">
+            <h3 className="text-center">Xandar</h3>
+            <img
+              src={qulture}
+              alt="Lady Disco by Xandar"
+              className="rounded-lg"
+            ></img>
+            <div className="flex flex-row justify-evenly my-5">
+              <a
+                href="https://open.spotify.com/track/4AmrRtGbSpBKsfTdRK1BFJ?si=ba5d12454e28493c"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={spotify}
+                  alt="Listen on Spotify"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
+              <a
+                href="https://music.apple.com/us/album/lady-disco/1619142427?i=1619142429"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={apple}
+                  alt="Listen on Apple Music"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
+            </div>
           </section>
-          <section className="flex flex-col justify-center mt-5">
-            Album 6
-            <div>
-              <img src={spotify} alt="Listen on Spotify"></img>
-              <img src={apple} alt="Listen on Apple Music"></img>
+          <section className="flex flex-col justify-center mt-5 mx-2 border-b-2 border-[#6C4B5E] tablet:border-0">
+            <h3 className="text-center">Chocolate In Your Pocket</h3>
+            <img
+              src={dieTrying}
+              alt="Carrie by Chocolate In Your Pocket"
+              className="rounded-lg"
+            ></img>
+            <div className="flex flex-row justify-evenly my-5">
+              <a
+                href="https://open.spotify.com/track/5kN37s0i2hMoyFiGt7IBn3?si=acf0eb560c05450e"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={spotify}
+                  alt="Listen on Spotify"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
+              <a
+                href="https://music.apple.com/us/album/carrie/1534159639?i=1534159644"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={apple}
+                  alt="Listen on Apple Music"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
             </div>
           </section>
         </div>
-        <article id="inquiryLinks" className="mt-5 grid grid-cols-1 tablet:grid-cols-2 justify-items-center font-josefin">
+        <article
+          id="inquiryLinks"
+          className="mt-5 grid grid-cols-1 tablet:grid-cols-2 justify-items-center font-josefin"
+        >
           <h4 className="m-3 text-6xl text-center text-[#6C4B5E]">
             <a
               href="https://forms.gle/NvuXLyZbPc2dCxcb7"
               title="Link to Audio Inquiry Form"
-              className="text-6xl text-center"
+              className="text-3xl text-center"
               target="_blank"
               rel="noreferrer"
             >
@@ -90,7 +269,7 @@ export default function Audio({ loggedIn, setLoggedIn }) {
             <a
               href="https://www.chocolateinyourpocket.com/connect"
               title="Link to CIYP Booking"
-              className="text-6xl text-center"
+              className="text-3xl text-center"
               target="_blank"
               rel="noreferrer"
             >
@@ -105,6 +284,7 @@ export default function Audio({ loggedIn, setLoggedIn }) {
           </h4>
         </article>
       </section>
+      <div className="h-[8vh] w-auto">{/* Dummy Div for Spacing */}</div>
     </>
   );
 }
