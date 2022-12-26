@@ -8,22 +8,9 @@ My portfolio, built using React. Click [here](https://andrewmoody96.github.io/po
 ---
 ## Table of Contents
 
-- [Photos](#photos)
 - [Contributing](#contributing)
 - [Questions](#questions)
 - [License](#license)
-
----
-## Photos
-
-![Homepage](./Assets/images/home.png)
-
-![Projects](./Assets/images/projects.png)
-
-![More Projects](./Assets/images/moreprojects.png)
-
-![About Me](./Assets/images/about.png)
-
 
 ---
 ## Contributing
