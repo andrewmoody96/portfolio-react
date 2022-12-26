@@ -31,11 +31,11 @@ export default function MoreProjects({ loggedIn, setLoggedIn }) {
                 />
               </div>
             </a>
-            <button className="m-2 rounded-md bg-[#6C4B5E] p-1 w-[10vw] place-self-center text-[#FCF2E2] hover:text-red-600 hover:bg-[#6C4B5E]/50">
+            <button className="p-2 m-2 rounded-md bg-[#6C4B5E] w-[33vw] place-self-center text-[#FCF2E2] hover:text-red-600 hover:bg-[#6C4B5E]/50">
               <a
                 href="https://github.com/P3-sharkBait/diveBuddy"
                 title="GitHub"
-                className="repoLink"
+                className="repoLink text-center"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -64,7 +64,7 @@ export default function MoreProjects({ loggedIn, setLoggedIn }) {
                 />
               </div>
             </a>
-            <button className="m-2 rounded-md bg-[#6C4B5E] p-1 w-[10vw] place-self-center text-[#FCF2E2] hover:text-red-600 hover:bg-[#6C4B5E]/50">
+            <button className="p-2 m-2 rounded-md bg-[#6C4B5E] w-[33vw] place-self-center text-[#FCF2E2] hover:text-red-600 hover:bg-[#6C4B5E]/50">
               <a
                 href="https://github.com/p1t3-canjoefish/1-fish-2-fish-red-fish-joe-fish"
                 title="GitHub"

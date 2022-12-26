@@ -53,7 +53,7 @@ export default function Dev() {
             className="my-5 mx-2 rounded-md bg-[#6C4B5E] text-[#FCF2E2] p-1 hover:text-red-600 hover:bg-[#6C4B5E]/50"
             onClick={() => setView("moreApps")}
           >
-            More Apps
+            More
           </button>{" "}
         </section>
       );

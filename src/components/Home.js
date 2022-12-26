@@ -34,19 +34,19 @@ export default function Home() {
               <div className="flex flex-col tablet:flex-row justify-center items-center text-sm">
                 <button
                   onClick={() => setView("audio")}
-                  className="p-1 text-[#FCF2E2] m-2 rounded-md bg-[#6C4B5E] flex justify-center items-center w-[33vw] tablet:w-[18vw] drop-shadow-[0_20px_40px_rgba(108,75,94,0.15)] font-josefin hover:text-red-600 hover:bg-[#6C4B5E]/50"
+                  className="p-2 text-[#FCF2E2] m-2 rounded-md bg-[#6C4B5E] flex justify-center items-center w-[33vw] tablet:w-[18vw] drop-shadow-[0_20px_40px_rgba(108,75,94,0.15)] font-josefin hover:text-red-600 hover:bg-[#6C4B5E]/50"
                 >
                   <i className="my-5 ml-5 fa fa-music fa-2xl "></i>
                   <p className="m-2">Music</p>
                 </button>
                 <button
                   onClick={() => setView("development")}
-                  className="p-1 text-[#FCF2E2] m-2 rounded-md bg-[#6C4B5E] flex justify-center items-center w-[33vw] tablet:w-[18vw] drop-shadow-[0_20px_40px_rgba(108,75,94,0.15)] font-josefin hover:text-red-600 hover:bg-[#6C4B5E]/50"
+                  className="p-2 text-[#FCF2E2] m-2 rounded-md bg-[#6C4B5E] flex justify-center items-center w-[33vw] tablet:w-[18vw] drop-shadow-[0_20px_40px_rgba(108,75,94,0.15)] font-josefin hover:text-red-600 hover:bg-[#6C4B5E]/50"
                 >
                   <i className="my-5 ml-5 fa fa-code-branch fa-2xl "></i>
-                  <p className="m-2">Development</p>
+                  <p className="m-2">Dev</p>
                 </button>
-                <button className="p-1 text-[#FCF2E2] m-2 rounded-md bg-[#6C4B5E] flex justify-center items-center w-[33vw] tablet:w-[18vw] drop-shadow-[0_20px_40px_rgba(108,75,94,0.15)] font-josefin hover:text-red-600 hover:bg-[#6C4B5E]/50">
+                <button className="p-2 text-[#FCF2E2] m-2 rounded-md bg-[#6C4B5E] flex justify-center items-center w-[33vw] tablet:w-[18vw] drop-shadow-[0_20px_40px_rgba(108,75,94,0.15)] font-josefin hover:text-red-600 hover:bg-[#6C4B5E]/50">
                   <a
                     href="https://github.com/andrewmoody96"
                     target="_blank"
@@ -59,14 +59,14 @@ export default function Home() {
                 </button>
                 <button
                   onClick={() => setView("about")}
-                  className="p-1 text-[#FCF2E2] m-2 rounded-md bg-[#6C4B5E] flex justify-center items-center w-[33vw] tablet:w-[18vw] drop-shadow-[0_20px_40px_rgba(108,75,94,0.15)] font-josefin hover:text-red-600 hover:bg-[#6C4B5E]/50"
+                  className="p-2 text-[#FCF2E2] m-2 rounded-md bg-[#6C4B5E] flex justify-center items-center w-[33vw] tablet:w-[18vw] drop-shadow-[0_20px_40px_rgba(108,75,94,0.15)] font-josefin hover:text-red-600 hover:bg-[#6C4B5E]/50"
                 >
                   <i className="my-5 ml-5 fa fa-person fa-2xl "></i>
                   <p className="m-2">About Me</p>
                 </button>
                 <button
                   onClick={() => setView("contact")}
-                  className="p-1 text-[#FCF2E2] m-2 rounded-md bg-[#6C4B5E] flex justify-center items-center w-[33vw] tablet:w-[18vw] drop-shadow-[0_20px_40px_rgba(108,75,94,0.15)] font-josefin hover:text-red-600 hover:bg-[#6C4B5E]/50"
+                  className="p-2 text-[#FCF2E2] m-2 rounded-md bg-[#6C4B5E] flex justify-center items-center w-[33vw] tablet:w-[18vw] drop-shadow-[0_20px_40px_rgba(108,75,94,0.15)] font-josefin hover:text-red-600 hover:bg-[#6C4B5E]/50"
                 >
                   <i className="my-5 ml-5 fa fa-comments fa-2xl "></i>
                   <p className="m-1">Get In Touch</p>
