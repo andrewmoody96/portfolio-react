@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-react/static/css/main.82703565.css",
-    "main.js": "/portfolio-react/static/js/main.a1429f7c.js",
+    "main.js": "/portfolio-react/static/js/main.ec34bd92.js",
     "static/media/divebuddyCapture.jpg": "/portfolio-react/static/media/divebuddyCapture.0e304ab3e08154e8d275.jpg",
     "static/media/fishAppCapture.png": "/portfolio-react/static/media/fishAppCapture.ff2496fca9771e39dfae.png",
     "static/media/CIYPcapture.jpg": "/portfolio-react/static/media/CIYPcapture.eebe32298db13595f7a2.jpg",
@@ -16,10 +16,10 @@
     "static/media/applemusiclogo.svg": "/portfolio-react/static/media/applemusiclogo.a7f982347fc3f7cfe747f9b311d9df66.svg",
     "index.html": "/portfolio-react/index.html",
     "main.82703565.css.map": "/portfolio-react/static/css/main.82703565.css.map",
-    "main.a1429f7c.js.map": "/portfolio-react/static/js/main.a1429f7c.js.map"
+    "main.ec34bd92.js.map": "/portfolio-react/static/js/main.ec34bd92.js.map"
   },
   "entrypoints": [
     "static/css/main.82703565.css",
-    "static/js/main.a1429f7c.js"
+    "static/js/main.ec34bd92.js"
   ]
 }
