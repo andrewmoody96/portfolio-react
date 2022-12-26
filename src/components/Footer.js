@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
   return (
-    <footer className="mt-10 tablet:fixed relative bottom-0 left-0 right-0 mb-10 text-[#6C4B5E]">
+    <footer className="mt-10 relative bottom-0 left-0 right-0 mb-10 text-[#6C4B5E]">
       <div className="flex flex-row justify-center text-lg">
         <h4 className="m-2">
           <a

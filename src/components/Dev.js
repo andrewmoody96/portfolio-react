@@ -55,6 +55,8 @@ export default function Dev() {
           >
             More
           </button>{" "}
+          <div className="h-[15vh] w-auto">{/* Dummy Div for Spacing */}</div>
+
         </section>
       );
   };
