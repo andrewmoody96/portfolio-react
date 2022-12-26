@@ -22,7 +22,7 @@ export default function Dev() {
       );
     } else
       return (
-        <section className="font-josefin mx-2 flex flex-col justify-items-center items-center">
+        <section className="font-josefin mx-2 flex flex-col justify-center items-center">
           <p className="text-xl border-b-2 border-[#6C4B5E] text-[#6C4B5E]">
             Click an image to view the app.
           </p>
@@ -40,12 +40,14 @@ export default function Dev() {
                   My band's website. View upcoming shows and join our mailing
                   list.
                 </h6>
-                <img
-                  id="featuredapp-pic"
-                  src={CIYPcapture}
-                  alt="Featured web application."
-                  className="max-h-[50vh] w-auto rounded-md drop-shadow-[0_35px_35px_rgba(108,75,94,0.25)]"
-                />
+                <div>
+                  <img
+                    id="featuredapp-pic"
+                    src={CIYPcapture}
+                    alt="Featured web application."
+                    className="max-h-[50vh] m-auto w-auto rounded-md drop-shadow-[0_35px_35px_rgba(108,75,94,0.25)]"
+                  />
+                </div>
               </a>
             </div>
           </div>
@@ -55,8 +57,6 @@ export default function Dev() {
           >
             More
           </button>{" "}
-          <div className="h-[15vh] w-auto">{/* Dummy Div for Spacing */}</div>
-
         </section>
       );
   };
