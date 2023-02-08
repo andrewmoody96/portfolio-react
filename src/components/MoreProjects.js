@@ -1,6 +1,6 @@
 import React from "react";
 import fishAppCapture from "../images/fishAppCapture.png";
-import divebuddyCapture from "../images/divebuddyCapture.jpg";
+// import divebuddyCapture from "../images/divebuddyCapture.jpg";
 
 export default function MoreProjects({ loggedIn, setLoggedIn }) {
   return (
@@ -10,7 +10,7 @@ export default function MoreProjects({ loggedIn, setLoggedIn }) {
       </p>
       <section className="mt-5">
         <div id="other-apps" className="grid grid-cols-1 tablet:grid-cols-2">
-          <section className="flex flex-col justify-center mt-5">
+          {/* <section className="flex flex-col justify-center mt-5">
             <a
               href="https://dive-buddy-app.herokuapp.com/"
               target="_blank"
@@ -42,7 +42,7 @@ export default function MoreProjects({ loggedIn, setLoggedIn }) {
                 Repo
               </a>
             </button>
-          </section>
+          </section> */}
           <section className="flex flex-col justify-center mt-5">
             <a
               href="https://andrewmoody96.github.io/1-fish-2-fish-red-fish-joe-fish/"

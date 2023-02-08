@@ -4,6 +4,8 @@ import spotify from "../images/spotifylogo.png";
 import apple from "../images/applemusiclogo.svg";
 
 // album photos
+import kingdomsFall from "../images/kingdomsFall.png";
+import deepDeepDreamer from "../images/deepDeepDreamer.png"
 import adonisCover from "../images/adonisReimagined.jpeg";
 import guestBedroom from "../images/guestBedroom.jpeg";
 import ppp from "../images/puffPuffPoseidon.jpeg";
@@ -51,6 +53,70 @@ export default function Audio() {
           id="albumLinks"
           className="grid grid-cols-1 tablet:grid-cols-2 justify-items-center font-josefin text-lg"
         >
+          <section className="flex flex-col justify-center mt-5 mx-2 border-b-2 border-[#6C4B5E] tablet:border-0">
+            <h3 className="text-center">WLDFRE</h3>
+            <img
+              src={kingdomsFall}
+              alt="Kingdoms Fall by WLDFRE"
+              className="rounded-lg"
+            ></img>
+            <div className="flex flex-row justify-evenly my-5">
+              <a
+                href="https://open.spotify.com/track/0eJAOH7THQK8U4OtkGsMkg?si=4fb0fabea78f484e"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={spotify}
+                  alt="Listen on Spotify"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
+              <a
+                href="https://music.apple.com/us/album/kingdoms-fall/1665513920?i=1665513921"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={apple}
+                  alt="Listen on Apple Music"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
+            </div>
+          </section>
+          <section className="flex flex-col justify-center mt-5 mx-2 border-b-2 border-[#6C4B5E] tablet:border-0">
+            <h3 className="text-center">Lennie Quest</h3>
+            <img
+              src={deepDeepDreamer}
+              alt="DEEP DEEP DREAMER by Lennie Quest"
+              className="rounded-lg"
+            ></img>
+            <div className="flex flex-row justify-evenly my-5">
+              <a
+                href="https://open.spotify.com/album/2rCu6bDo7WXY7x6lpiGY3m?si=ocr9q9xnQiG5StFspEz5-g"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={spotify}
+                  alt="Listen on Spotify"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
+              <a
+                href="https://music.apple.com/us/album/deep-deep-dreamer/1661539885"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={apple}
+                  alt="Listen on Apple Music"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
+            </div>
+          </section>
           <section className="flex flex-col justify-center mt-5 mx-2 mb-2 border-b-2 border-[#6C4B5E] tablet:border-0">
             <h3 className="text-center">Tommy Bravos</h3>
             <img
