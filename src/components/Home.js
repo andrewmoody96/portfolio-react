@@ -1,5 +1,5 @@
 import React from "react";
-import headshot from "../images/moodyHead.jpeg";
+import headshot from "../images/moodyHead.jpg";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
           id="moody-headshot"
           src={headshot}
           alt="Andrew Moody."
-          className="w-[45vw] max-w-[1000px] rounded-full m-5 tablet:w-[25vw] border-4 border-[#6C4B5E] border-double drop-shadow-[0_35px_35px_rgba(108,75,94,0.25)]"
+          className="w-[45vw] max-w-[1000px] rounded-full m-5 tablet:w-[25vw] border-4 border-[#6C4B5E] border-double drop-shadow-[5px_15px_50px_rgba(108,75,94,0.5)]"
         />
         <div className="flex flex-col justify-center rounded-md">
           {/* <div id="animationContainer" className="console-container m-5">

@@ -5,13 +5,13 @@ import spotify from "../images/spotifylogo.png";
 import apple from "../images/applemusiclogo.svg";
 
 // album photos
+import holyHigh from "../images/holyHigh.png"
 import kingdomsFall from "../images/kingdomsFall.png";
 import deepDeepDreamer from "../images/deepDeepDreamer.png";
 import adonisCover from "../images/adonisReimagined.jpeg";
 import guestBedroom from "../images/guestBedroom.jpeg";
 import ppp from "../images/puffPuffPoseidon.jpeg";
 import bagatelles from "../images/bagatelles.jpeg";
-import qulture from "../images/qulture.jpeg";
 import dieTrying from "../images/dieTrying.jpeg";
 
 export default function Audio() {
@@ -61,6 +61,38 @@ export default function Audio() {
           id="albumLinks"
           className="grid grid-cols-1 tablet:grid-cols-2 justify-items-center font-josefin text-lg"
         >
+          <section className="flex flex-col justify-center mt-5 mx-2 border-b-2 border-[#6C4B5E] tablet:border-0">
+            <h3 className="text-center mb-2">Rifton</h3>
+            <img
+              src={holyHigh}
+              alt="Holy High by Rifton"
+              className="rounded-lg"
+            ></img>
+            <div className="flex flex-row justify-evenly my-5">
+              <a
+                href="https://open.spotify.com/track/1UrSyWBGgkr0x2AJMAoSOk?si=c04c8476cc58483b"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={spotify}
+                  alt="Listen on Spotify"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
+              <a
+                href="https://music.apple.com/us/album/holy-high/1676779069?i=1676779070"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={apple}
+                  alt="Listen on Apple Music"
+                  className="h-[5vh] mx-2"
+                ></img>
+              </a>
+            </div>
+          </section>
           <section className="flex flex-col justify-center mt-5 mx-2 border-b-2 border-[#6C4B5E] tablet:border-0">
             <h3 className="text-center mb-2">WLDFRE</h3>
             <img
@@ -242,38 +274,6 @@ export default function Audio() {
               </a>
               <a
                 href="https://music.apple.com/us/album/6-bagatelles-op-126-no-3-andante-cantabile-e-grazioso/1582473154?i=1582473486"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={apple}
-                  alt="Listen on Apple Music"
-                  className="h-[5vh] mx-2"
-                ></img>
-              </a>
-            </div>
-          </section>
-          <section className="flex flex-col justify-center mt-5 mx-2 border-b-2 border-[#6C4B5E] tablet:border-0">
-            <h3 className="text-center mb-2">Xandar</h3>
-            <img
-              src={qulture}
-              alt="Lady Disco by Xandar"
-              className="rounded-lg"
-            ></img>
-            <div className="flex flex-row justify-evenly my-5">
-              <a
-                href="https://open.spotify.com/track/4AmrRtGbSpBKsfTdRK1BFJ?si=ba5d12454e28493c"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={spotify}
-                  alt="Listen on Spotify"
-                  className="h-[5vh] mx-2"
-                ></img>
-              </a>
-              <a
-                href="https://music.apple.com/us/album/lady-disco/1619142427?i=1619142429"
                 target="_blank"
                 rel="noreferrer"
               >
