@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.82703565.css",
-    "main.js": "/portfolio-react/static/js/main.39db2ceb.js",
-    "static/media/fishAppCapture.png": "/portfolio-react/static/media/fishAppCapture.ff2496fca9771e39dfae.png",
-    "static/media/deepDeepDreamer.png": "/portfolio-react/static/media/deepDeepDreamer.3f57f6f1e70532237933.png",
-    "static/media/CIYPcapture.jpg": "/portfolio-react/static/media/CIYPcapture.eebe32298db13595f7a2.jpg",
-    "static/media/kingdomsFall.png": "/portfolio-react/static/media/kingdomsFall.fd9e214fa8d0fdd13312.png",
-    "static/media/moodyHead.jpeg": "/portfolio-react/static/media/moodyHead.4c3d054126aac6077489.jpeg",
-    "static/media/adonisReimagined.jpeg": "/portfolio-react/static/media/adonisReimagined.8245e1b3e51b88470604.jpeg",
-    "static/media/puffPuffPoseidon.jpeg": "/portfolio-react/static/media/puffPuffPoseidon.75377d2dd4290fa381ae.jpeg",
-    "static/media/guestBedroom.jpeg": "/portfolio-react/static/media/guestBedroom.481af2a1997c7e78c654.jpeg",
-    "static/media/bagatelles.jpeg": "/portfolio-react/static/media/bagatelles.61484b05fa95cd11cd25.jpeg",
-    "static/media/dieTrying.jpeg": "/portfolio-react/static/media/dieTrying.24cfc02f380500f07aa1.jpeg",
-    "static/media/qulture.jpeg": "/portfolio-react/static/media/qulture.eb1cebfcdca64d7e9537.jpeg",
-    "static/media/spotifylogo.png": "/portfolio-react/static/media/spotifylogo.cd66b8f63f6566194c7e.png",
-    "static/media/applemusiclogo.svg": "/portfolio-react/static/media/applemusiclogo.a7f982347fc3f7cfe747f9b311d9df66.svg",
-    "index.html": "/portfolio-react/index.html",
-    "main.82703565.css.map": "/portfolio-react/static/css/main.82703565.css.map",
-    "main.39db2ceb.js.map": "/portfolio-react/static/js/main.39db2ceb.js.map"
+    "main.css": "/static/css/main.51d69069.css",
+    "main.js": "/static/js/main.af779c03.js",
+    "static/media/fishAppCapture.png": "/static/media/fishAppCapture.ff2496fca9771e39dfae.png",
+    "static/media/deepDeepDreamer.png": "/static/media/deepDeepDreamer.3f57f6f1e70532237933.png",
+    "static/media/fullyBooked.png": "/static/media/fullyBooked.3e276d80cc9612476954.png",
+    "static/media/CIYPcapture.jpg": "/static/media/CIYPcapture.eebe32298db13595f7a2.jpg",
+    "static/media/kingdomsFall.png": "/static/media/kingdomsFall.fd9e214fa8d0fdd13312.png",
+    "static/media/moodyHead.jpeg": "/static/media/moodyHead.4c3d054126aac6077489.jpeg",
+    "static/media/adonisReimagined.jpeg": "/static/media/adonisReimagined.8245e1b3e51b88470604.jpeg",
+    "static/media/puffPuffPoseidon.jpeg": "/static/media/puffPuffPoseidon.75377d2dd4290fa381ae.jpeg",
+    "static/media/guestBedroom.jpeg": "/static/media/guestBedroom.481af2a1997c7e78c654.jpeg",
+    "static/media/bagatelles.jpeg": "/static/media/bagatelles.61484b05fa95cd11cd25.jpeg",
+    "static/media/dieTrying.jpeg": "/static/media/dieTrying.24cfc02f380500f07aa1.jpeg",
+    "static/media/qulture.jpeg": "/static/media/qulture.eb1cebfcdca64d7e9537.jpeg",
+    "static/media/spotifylogo.png": "/static/media/spotifylogo.cd66b8f63f6566194c7e.png",
+    "static/media/applemusiclogo.svg": "/static/media/applemusiclogo.a7f982347fc3f7cfe747f9b311d9df66.svg",
+    "index.html": "/index.html",
+    "main.51d69069.css.map": "/static/css/main.51d69069.css.map",
+    "main.af779c03.js.map": "/static/js/main.af779c03.js.map"
   },
   "entrypoints": [
-    "static/css/main.82703565.css",
-    "static/js/main.39db2ceb.js"
+    "static/css/main.51d69069.css",
+    "static/js/main.af779c03.js"
   ]
 }
