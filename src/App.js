@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
@@ -24,7 +23,7 @@ library.add(fas, far, faInstagram, faGithub, faLinkedin);
 
 function App() {
   return (
-    <Router>
+    <Router basename={`/${process.env.PUBLIC_URL}`}>
       <div className="">
         <Link to="/">
           <h1 className="text-center text-[#6C4B5E] text-4xl mt-2 font-audiowide">
