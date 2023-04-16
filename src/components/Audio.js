@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import spotify from "../images/spotifylogo.png";
 import apple from "../images/applemusiclogo.svg";
 
 // album photos
 import kingdomsFall from "../images/kingdomsFall.png";
-import deepDeepDreamer from "../images/deepDeepDreamer.png"
+import deepDeepDreamer from "../images/deepDeepDreamer.png";
 import adonisCover from "../images/adonisReimagined.jpeg";
 import guestBedroom from "../images/guestBedroom.jpeg";
 import ppp from "../images/puffPuffPoseidon.jpeg";
@@ -15,8 +16,15 @@ import dieTrying from "../images/dieTrying.jpeg";
 
 export default function Audio() {
   return (
-    <>
-      <div className="h-[8vh] w-auto">{/* Dummy Div for Spacing */}</div>
+    <div className="flex flex-col items-center">
+      <Link
+        to="/"
+        className="mt-5 text-center text-[#FCF2E2] bg-[#6C4B5E] font-josefin w-[17vw] rounded-md text-sm p-2 hover:text-red-600 hover:bg-[#6C4B5E]/50"
+      >
+        go back
+      </Link>
+      <div className="h-[3vh] w-auto ">{/* Dummy Div for Spacing */}</div>
+
       <section className="m-5">
         <article
           id="audioInfo"
@@ -54,7 +62,7 @@ export default function Audio() {
           className="grid grid-cols-1 tablet:grid-cols-2 justify-items-center font-josefin text-lg"
         >
           <section className="flex flex-col justify-center mt-5 mx-2 border-b-2 border-[#6C4B5E] tablet:border-0">
-            <h3 className="text-center">WLDFRE</h3>
+            <h3 className="text-center mb-2">WLDFRE</h3>
             <img
               src={kingdomsFall}
               alt="Kingdoms Fall by WLDFRE"
@@ -86,7 +94,7 @@ export default function Audio() {
             </div>
           </section>
           <section className="flex flex-col justify-center mt-5 mx-2 border-b-2 border-[#6C4B5E] tablet:border-0">
-            <h3 className="text-center">Lennie Quest</h3>
+            <h3 className="text-center mb-2">Lennie Quest</h3>
             <img
               src={deepDeepDreamer}
               alt="DEEP DEEP DREAMER by Lennie Quest"
@@ -118,7 +126,7 @@ export default function Audio() {
             </div>
           </section>
           <section className="flex flex-col justify-center mt-5 mx-2 mb-2 border-b-2 border-[#6C4B5E] tablet:border-0">
-            <h3 className="text-center">Tommy Bravos</h3>
+            <h3 className="text-center mb-2">Tommy Bravos</h3>
             <img
               src={adonisCover}
               alt="Romeo (Moistbreezy Remix) by Tommy Bravos"
@@ -150,7 +158,7 @@ export default function Audio() {
             </div>
           </section>
           <section className="flex flex-col justify-center mt-5 mx-2 border-b-2 border-[#6C4B5E] tablet:border-0">
-            <h3 className="text-center">Alex Erickson</h3>
+            <h3 className="text-center mb-2">Alex Erickson</h3>
             <img
               src={guestBedroom}
               alt="1912 by Alex Erickson"
@@ -182,7 +190,7 @@ export default function Audio() {
             </div>
           </section>
           <section className="flex flex-col justify-center mt-5 mx-2 border-b-2 border-[#6C4B5E] tablet:border-0">
-            <h3 className="text-center">Puff Puff Poseidon</h3>
+            <h3 className="text-center mb-2">Puff Puff Poseidon</h3>
             <img
               src={ppp}
               alt="Percussion Sexuals by Puff Puff Poseidon"
@@ -214,7 +222,7 @@ export default function Audio() {
             </div>
           </section>
           <section className="flex flex-col justify-center mt-5 mx-2 border-b-2 border-[#6C4B5E] tablet:border-0">
-            <h3 className="text-center">Silvan Negrutiu</h3>
+            <h3 className="text-center mb-2">Silvan Negrutiu</h3>
             <img
               src={bagatelles}
               alt="6 Bagatelles, Op. 126: No. 3, Andante, cantabile e grazioso performed by Silvan Negrutiu"
@@ -246,7 +254,7 @@ export default function Audio() {
             </div>
           </section>
           <section className="flex flex-col justify-center mt-5 mx-2 border-b-2 border-[#6C4B5E] tablet:border-0">
-            <h3 className="text-center">Xandar</h3>
+            <h3 className="text-center mb-2">Xandar</h3>
             <img
               src={qulture}
               alt="Lady Disco by Xandar"
@@ -278,7 +286,7 @@ export default function Audio() {
             </div>
           </section>
           <section className="flex flex-col justify-center mt-5 mx-2 border-b-2 border-[#6C4B5E] tablet:border-0">
-            <h3 className="text-center">Chocolate In Your Pocket</h3>
+            <h3 className="text-center mb-2">Chocolate In Your Pocket</h3>
             <img
               src={dieTrying}
               alt="Carrie by Chocolate In Your Pocket"
@@ -351,6 +359,6 @@ export default function Audio() {
         </article>
       </section>
       <div className="h-[8vh] w-auto">{/* Dummy Div for Spacing */}</div>
-    </>
+    </div>
   );
 }

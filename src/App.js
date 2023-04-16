@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -11,29 +12,31 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-// import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
+import Audio from "./components/Audio";
 import About from "./components/About";
 import Dev from "./components/Dev";
 import Contact from "./components/Contact";
 
 import "./output.css";
-library.add(fas, far, faInstagram, faGithub, faLinkedin)
-
+library.add(fas, far, faInstagram, faGithub, faLinkedin);
 
 function App() {
-  
   return (
-    <Router basename={`/${process.env.PUBLIC_URL}`}>
+    <Router>
       <div className="">
-        {/* <Header /> */}
-        <h1 className="text-center text-[#6C4B5E] text-4xl mt-2 font-audiowide">Andrew Moody</h1>
+        <Link to="/">
+          <h1 className="text-center text-[#6C4B5E] text-4xl mt-2 font-audiowide">
+            Andrew Moody
+          </h1>
+        </Link>
         <div className="">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Dev />} />
-            <Route path="/contact" element={<Contact />}/>
+            <Route path="/music" element={<Audio />} />
+            <Route path="/dev" element={<Dev />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </div>
@@ -41,6 +44,6 @@ function App() {
       </div>
     </Router>
   );
-};
+}
 
 export default App;

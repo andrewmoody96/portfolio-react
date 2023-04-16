@@ -1,14 +1,23 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { Link } from "react-router-dom";
 export default function Contact() {
   return (
-    <>
-      <div className="h-[8vh] w-auto">{/* Dummy Div for Spacing */}</div>
+    <div className="flex flex-col items-center">
+      <Link
+        to="/"
+        className="mt-5 text-center text-[#FCF2E2] bg-[#6C4B5E] font-josefin w-[17vw] rounded-md text-sm p-2 hover:text-red-600 hover:bg-[#6C4B5E]/50"
+      >
+        go back
+      </Link>
       <article className="flex flex-col items-center justify-center">
+        <div className="h-[2vh] w-auto">{/* Dummy Div for Spacing */}</div>
+
         <p className="text-center font-josefin mt-5 text-[#6C4B5E]">
           Want to get in touch? <br></br> Drop me a line using the links below.
         </p>
+        <div className="h-[4vh] w-auto">{/* Dummy Div for Spacing */}</div>
+
         <div className="my-10 grid grid-cols-2 font-josefin">
           <h4 className="m-3 text-6xl text-center text-[#6C4B5E]">
             <a
@@ -82,7 +91,9 @@ export default function Contact() {
                 icon="fa fa-music"
                 className="hover:text-red-600"
               />
-              <p className="mt-1 text-xl text-center">Audio Engineering Inquiry</p>
+              <p className="mt-1 text-xl text-center">
+                Audio Engineering Inquiry
+              </p>
             </a>
           </h4>
           <h4 className="m-3 text-6xl text-center text-[#6C4B5E]">
@@ -102,6 +113,6 @@ export default function Contact() {
           </h4>
         </div>
       </article>
-    </>
+    </div>
   );
 }
